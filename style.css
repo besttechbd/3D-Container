@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+body {
+  background-color: crimson;
+}
+
+.box {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  background-color: #3c40c6;
+  width: 400px;
+  text-align: center;
+  -webkit-transform: translate(-50%) skewY(-8deg);
+          transform: translate(-50%) skewY(-8deg);
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  height: 100%;
+  background-color: #2f32a0;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -24px;
+  width: 100%;
+  height: 25px;
+  background-color: #6367d2;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+
+.box h4 {
+  padding: 10px;
+  background-color: white;
+  font-family: 'Lobster', cursive;
+  text-shadow: 0 2px 5px #333;
+}
+
+.box h4::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  background-color: #ddd;
+  width: 25px;
+  height: 56px;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.box p {
+  color: white;
+  padding: 0 10px;
+  font-family: 'Anton', sans-serif;
+}
+
+.left_text, .right_text {
+  text-align: center;
+  display: inline-block;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 100px;
+  background: linear-gradient(70deg, #00B7FF, #FFFFC7);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left_text {
+  float: left;
+}
+
+.right_text {
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */
